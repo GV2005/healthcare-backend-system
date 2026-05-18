@@ -1,5 +1,5 @@
 from fastapi import FastAPI,HTTPException
-from db.create_tables import *
+# from db.create_tables import *
 from middleware.logging_middleware import log_requests
 from exceptionHandlers.exphandler import http_exception_handler
 from routers.patientAPI import router as router1
