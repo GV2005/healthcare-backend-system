@@ -1,6 +1,6 @@
 from db_connection import cursor, conn
 
-print("TABLE CREATION STARTED")
+
 
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS illnesses(
