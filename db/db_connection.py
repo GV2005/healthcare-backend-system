@@ -1,12 +1,6 @@
 import psycopg2
+import os
 
-# conn=psycopg2.connect(
-#         database="healthcare_db",
-#         user="postgres",
-#         password="girig0131@G",
-#         host="localhost",
-#         port="5432"
-# )
-# cursor=conn.cursor()
-conn=None
-cursor=None
+database_url = os.getenv("postgresql://gv2005:sFOQlKIOKINUU5n4g6gQEH7aqTxo2a3C@dpg-d85ho4j7uimc739hkgq0-a/healthcare_db_v0no")
+conn=psycopg2.connect(database_url)
+cursor=conn.cursor()
